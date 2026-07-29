@@ -24,13 +24,3 @@ class YOLODetector:
 
         return detections
 
-# from ultralytics import YOLO
-
-# class YOLODetector:
-
-#     def __init__(self):
-#         self.model = YOLO("weights/yolo11n.pt")
-
-#     def predict(self, image):
-#         results = self.model(image, verbose=False)
-#         return results[0]

@@ -13,11 +13,11 @@ class DETRDetector:
         )
 
         self.processor = DetrImageProcessor.from_pretrained(
-            "weights/detr-resnet-50"
+            "facebook/detr-resnet-50"
         )
 
         self.model = DetrForObjectDetection.from_pretrained(
-            "weights/detr-resnet-50"
+            "facebook/detr-resnet-50"
         )
 
         self.model.to(self.device)
